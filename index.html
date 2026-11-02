@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拾光好車 NextDrive | 小資透明二手車選品所</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #3b82f6;
+      --accent: #f59e0b;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #64748b;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.4rem; margin-bottom: 12px; letter-spacing: 1px; }
+    header p { font-size: 1.1rem; opacity: 0.9; max-width: 650px; margin: 0 auto 24px; }
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--dark);
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--accent);
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 50px; }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+    }
+    .card-header { background: #f1f5f9; padding: 20px; text-align: center; border-bottom: 1px solid var(--border); }
+    .card-header h3 { font-size: 1.3rem; color: var(--dark); }
+    .card-body { padding: 24px; flex-grow: 1; }
+    .card-body ul { list-style: none; margin-bottom: 20px; }
+    .card-body li { margin-bottom: 10px; color: var(--gray); font-size: 0.95rem; }
+    .card-body li strong { color: var(--dark); }
+    .price-tag { font-size: 1.6rem; color: #dc2626; font-weight: bold; text-align: center; margin: 15px 0; }
+    .analysis-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 50px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    .analysis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .analysis-item { border-left: 4px solid var(--primary-light); padding-left: 14px; }
+    .analysis-item h4 { color: var(--primary); margin-bottom: 6px; }
+    .cta-section {
+      text-align: center;
+      background: white;
+      padding: 40px 20px;
+      border-radius: 16px;
+      border: 2px dashed var(--primary-light);
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 14px 36px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s;
+      margin-top: 15px;
+    }
+    .cta-btn:hover { background: #172554; }
+    footer { text-align: center; padding: 30px; color: var(--gray); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">萬能科技大學《創意發想與實踐》期中微型創業專案</div>
+    <h1>拾光好車 NextDrive</h1>
+    <p>讓每輛好車，陪伴你的下一段旅程 —— 零話術、全透明的 20~40 萬小資代步車選品所。</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- 學理核心：STP 與品牌主張 -->
+    <div class="analysis-box">
+      <h2 class="section-title">品牌定位與三大零黑箱承諾</h2>
+      <div class="analysis-grid">
+        <div class="analysis-item">
+          <h4>100% 透明車況報告</h4>
+          <p>底盤無滲漏檢測、車體原版件保證、監理站實體驗證無調表。</p>
+        </div>
+        <div class="analysis-item">
+          <h4>拒絕傳統強推話術</h4>
+          <p>不現場逼單、實車實價無隱藏附加費，新手看車無壓力。</p>
+        </div>
+        <div class="analysis-item">
+          <h4>白紙黑字退車保證</h4>
+          <p>開立履約保證契約，若查出為重大事故、泡水車，全額原價退款。</p>
+        </div>
+        <div class="analysis-item">
+          <h4>小資養車未來規劃</h4>
+          <p>交車提供未來 2 年耗材與保養預估單，買得安心、養得輕鬆。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4P 方案：精選三款小資代步商品展示 -->
+    <h2 class="section-title">本期嚴選小資代步好車</h2>
+    <div class="grid-3">
+      
+      <div class="card">
+        <div class="card-header">
+          <span style="font-size:0.8rem; color:#2563eb; font-weight:bold;">都會省油王</span>
+          <h3>Toyota Yaris 1.5 經典版</h3>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li><strong>年份／里程：</strong>2016 年 / 78,000 公里</li>
+            <li><strong>外觀車色：</strong>極光白（原漆原版件）</li>
+            <li><strong>認證狀態：</strong>第三方合格認證、無事故泡水</li>
+            <li><strong>特色配備：</strong>超省油耐操、維修零件便宜、都會停車首選</li>
+          </ul>
+          <div class="price-tag">NT$ 288,000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span style="font-size:0.8rem; color:#2563eb; font-weight:bold;">魔術大空間</span>
+          <h3>Nissan Tiida 1.6 豪華版</h3>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li><strong>年份／里程：</strong>2015 年 / 85,000 公里</li>
+            <li><strong>外觀車色：</strong>星鑽銀</li>
+            <li><strong>認證狀態：</strong>全車底盤原廠檢查無漏油</li>
+            <li><strong>特色配備：</strong>後座超大腿部空間、恆溫空調、倒車顯影</li>
+          </ul>
+          <div class="price-tag">NT$ 248,000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span style="font-size:0.8rem; color:#2563eb; font-weight:bold;">靈活小鋼砲</span>
+          <h3>Honda Fit 1.5 VTi-S</h3>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li><strong>年份／里程：</strong>2014 年 / 92,000 公里</li>
+            <li><strong>外觀車色：</strong>時尚灰</li>
+            <li><strong>認證狀態：</strong>附原廠完整保養履歷、電瓶輪胎剛換新</li>
+            <li><strong>特色配備：</strong>多功能魔術座椅折疊、操控輕快靈巧</li>
+          </ul>
+          <div class="price-tag">NT$ 268,000</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 步驟 7/8：預約意向登記表單按鈕 (MVP 驗證) -->
+    <div class="cta-section">
+      <h3 style="font-size: 1.5rem; margin-bottom: 10px;">想找好車，或是預約透明看車諮詢？</h3>
+      <p style="color: var(--gray);">我們提供一對一買車顧問諮詢與代客客製化尋車服務，絕無推銷壓力。</p>
+      <a href="https://forms.google.com" target="_blank" class="cta-btn">立即填寫賞車諮詢預約單</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>萬能科技大學 創意發想與實踐（11501）期中報告成果展示</p>
+    <p>© 2026 拾光好車 NextDrive. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
